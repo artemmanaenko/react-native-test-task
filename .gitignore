@@ -1,0 +1,18 @@
+node_modules
+.pnpm-store
+.DS_Store
+dist
+build
+coverage
+.vite
+*.log
+
+# React Native
+apps/mobile-rn/android/.gradle
+apps/mobile-rn/android/app/build
+apps/mobile-rn/android/build
+apps/mobile-rn/ios/Pods
+apps/mobile-rn/ios/build
+apps/mobile-rn/ios/.xcode.env.local
+apps/mobile-rn/ios/OrdersMobileNative.xcworkspace
+apps/mobile-rn/.metro-health-check*

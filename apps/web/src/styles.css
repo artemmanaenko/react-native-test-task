@@ -1,0 +1,120 @@
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #111827;
+  background: #f3f4f6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.layout {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+
+.layout-header h1 {
+  margin: 0;
+}
+
+.layout-header p {
+  margin: 8px 0 24px;
+  color: #6b7280;
+}
+
+.filter {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.filter select {
+  padding: 8px;
+}
+
+.orders-list,
+.items-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.order-card,
+.details-card,
+.state-box {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.order-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.muted {
+  color: #6b7280;
+}
+
+.status {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 4px 0;
+}
+
+.status-new,
+.status-processing {
+  background: #e0f2fe;
+}
+
+.status-shipped {
+  background: #fef3c7;
+}
+
+.status-delivered {
+  background: #dcfce7;
+}
+
+.status-cancelled {
+  background: #fee2e2;
+}
+
+.details-card {
+  margin-top: 16px;
+}
+
+.items-list li {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #f3f4f6;
+  padding: 10px 0;
+}
+
+button {
+  border: 1px solid #d1d5db;
+  background: #fff;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+.error-text {
+  color: #b91c1c;
+}

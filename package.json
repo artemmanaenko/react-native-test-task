@@ -1,0 +1,23 @@
+{
+  "name": "orders-monorepo-challenge",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@9.12.3",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev:api": "pnpm --filter @orders/api-mock dev",
+    "dev:web": "pnpm --filter @orders/web dev",
+    "dev:rn": "pnpm --filter @orders/mobile-rn start",
+    "test": "pnpm -r test",
+    "test:mobile-coverage": "pnpm --filter @orders/mobile-rn test:coverage:check",
+    "test:coverage": "pnpm --filter @orders/shared test:coverage:check && pnpm --filter @orders/web test:coverage:check && pnpm --filter @orders/mobile-rn test:coverage:check",
+    "typecheck": "pnpm -r typecheck",
+    "lint": "pnpm -r lint"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.1",
+    "typescript": "5.7.2"
+  }
+}
