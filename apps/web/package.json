@@ -31,5 +31,9 @@
     "typescript": "5.7.2",
     "vite": "5.4.11",
     "vitest": "2.1.5"
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-darwin-arm64": "4.59.0",
+    "@rollup/rollup-darwin-x64": "4.59.0"
   }
 }
